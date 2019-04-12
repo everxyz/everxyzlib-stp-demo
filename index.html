@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf8'>
+    <title>everxyzlib step demo</title>
+    <script src='https://test.everxyz.com/stp/static/everxyz-stp.js'></script>
+    <style>
+    #hello {
+      width: 600px;
+      height: 400px;
+      border: 1px solid orange;
+    }
+    </style>
+  </head>
+
+  <body>
+    <h1>EverCAD stp api 使用示例</h1>
+    <div id="hello"></div>
+    <p>本示例中的 modelid 和 clientid 是已经生成好的, 可以直接在 'localhost:9090' 端口使用</p>
+    <p>启动后, 在浏览器中打开: http://localhost:9090</p>
+
+    <h2>使用方法</h2>
+    <ul>
+      <li>npm init</li>
+      <li>'npm run start' 或 'npx http-server -p 9090'</li>
+    </ul>
+
+    <script>
+      window.onload = function () {
+
+        var options = {
+          toolbar: {
+            modeltree: true,
+            views: true,
+            rendermode: true,
+            views: true,
+            anno3d: true,
+            measure: true,
+            iconHeight: '16px',
+            fontFamily: 'monospace',
+            fontSize: '12px',
+            item: {
+              iconHeight: '14px'
+            }
+          }
+        };
+
+        var modelid = "ea6493ad2e52faa14dd57eddf1ecaf9a102c1e6de3e79ac4f461735b000bb161";
+        var clientid = "8b0f2693ea9998a54a820cb202a356ce21f0ced7c8921f0aac120472ef1514a8";
+
+        var everRender = evercad.renderStp('#hello', { clientid, modelid }, options);
+
+      }
+    </script>
+  </body>
+
+</html>
