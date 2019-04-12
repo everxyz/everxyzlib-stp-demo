@@ -27,7 +27,7 @@ This demo shows you how to use everxyzlib to render step file in your website.
 
 ## 3. python2
 
-```bash
+  ```bash
   $ python2 -m SimpleHTTPServer 9090
-```
+  ```
 
