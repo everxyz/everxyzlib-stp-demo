@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "http-server -p 9090"
+    "start": "http-server -p 5757"
   },
   "repository": "git@github.com:everxyz/everxyzlib-stp-demo.git",
   "author": "spaceman007 <xtimespace@163.com>",
