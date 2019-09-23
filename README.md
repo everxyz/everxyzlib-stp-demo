@@ -21,8 +21,10 @@ This demo shows you how to use everxyzlib to render step file in your website.
   $ npm run start # 或 npx http-server -p 5757
   ```
   注：
-  1.服务开启的域名端口，需与申请clientid的域名一致，如clientid是使用localhost：9090申请的，则此处服务器端口也需为9090
-  
+  1.服务开启的域名端口，需与申请 clientid 的域名一致，如clientid是使用 localhost:9090 申请的，则此处服务器端口也需为 9090
+
+  ![](./assets/new_clientid.png)
+
 ### 2. python3
 
   ```bash
